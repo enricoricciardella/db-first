@@ -1,18 +1,18 @@
-id                        INT                  UNIQUE         
+id                        UNSIGNED INT       AUTOINCREMENT UNIQUE NOTNULL         
 modello                   VARCHAR(255)         NOTNULL
 anno_di_produzione        YEAR                 NOTNULL
 quantità_auto_disp        UNSIGNED INT         NOTNULL
-descrizione               VARCHAR(255)         
+descrizione               TEXT        
 chilometri                INT                  NOTNULL
 stato_interni             VARCHAR(255)         
 immatricolazione          DATE                 NOTNULL
 tipo_carburante           VARCHAR(30)          NOTNULL
 colore                    VARCHAR(30)          NOTNULL
-stato_auto                VARCHAR(100)         NOTNULL
-consumi                   DECIMAL(5,2)         NOTNULL
+stato_auto                VARCHAR(255)         NOTNULL
+consumi_km_litro          DECIMAL(5,2)         NOTNULL
 emissioni                 DECIMAL(5,2)         NOTNULL 
 numero_porte              UNSIGNED TINYINT     NOTNULL
 numero_posti              UNSIGNED TINYINT     NOTNULL
-
+prezzo                    DECIMAL (10,2)       NOTNULL 
 
 
